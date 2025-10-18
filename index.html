@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StageApp - The Digital Venue for Musicians</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .gradient-text {
+            background: linear-gradient(to right, #a855f7, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-text-reversed {
+            background: linear-gradient(to right, #ec4899, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200 antialiased">
+
+<!-- Header -->
+<header class="absolute top-0 left-0 right-0 z-10 py-6 px-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <h2 class="text-2xl font-bold">StageApp</h2>
+        <a href="#early-access"
+           class="bg-gray-700 hover:bg-gray-600 text-white font-semibold py-2 px-5 rounded-lg transition duration-300">
+            Get Access
+        </a>
+    </div>
+</header>
+
+<main class="pt-32 pb-16 md:pt-40 md:pb-24">
+    <div class="container mx-auto px-4 text-center">
+        <h1 class="text-4xl md:text-6xl font-black max-w-4xl mx-auto leading-tight">
+            Turn Followers Into Fans.<br /> Your <span class="gradient-text">StageApp</span> Is Your Digital Headliner.
+        </h1>
+        <p class="text-lg md:text-xl text-gray-400 mt-6 max-w-2xl mx-auto">
+            Stop sending fans to a generic link graveyard. Build a powerful, branded micro-site that embeds your
+            music, promotes your gigs, and finally converts engagement into revenue.
+        </p>
+
+        <div id="early-access" class="mt-10">
+            <form class="max-w-lg mx-auto" action="https://formspree.io/f/xvgwyoaa" method="POST">
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <input type="email" placeholder="Enter your email" name="_replyto" required
+                           pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                           class="w-full px-5 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-purple-500 focus:outline-none transition">
+                    <button type="submit"
+                            class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 whitespace-nowrap">
+                        Request Early Access
+                    </button>
+                </div>
+                <p class="text-sm text-gray-500 mt-3">Get 50% off for life when we launch.</p>
+            </form>
+        </div>
+
+        <div></div>
+
+        <div class="container mx-auto py-16 md:py-24 px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold">Design Your Digital Stage</h2>
+                <p class="text-lg text-gray-400 mt-4 max-w-2xl mx-auto">Customize themes to match your aesthetic, ensuring your welcome page is the perfect entrance to your musical world.</p>
+            </div>
+            <div class="mt-16 md:mt-24 max-w-4xl mx-auto relative">
+                <div class="swiper-container swiper-container-1 overflow-hidden">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="width: 300px;">
+                            <div class="bg-gray-800 rounded-3xl p-3 shadow-2xl shadow-purple-900/20">
+                                <img src="./resources/hip-hop/ss01.png" alt="Hip-hop"
+                                     class="rounded-2xl w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="width: 300px;">
+                            <div class="bg-gray-800 rounded-3xl p-3 shadow-2xl shadow-purple-900/20">
+                                <div class="bg-gray-900 rounded-2xl aspect-[9/18]">
+                                    <img src="./resources/metal/ss01.png" alt="Metal"
+                                         class="rounded-2xl w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="width: 300px;">
+                            <div class="bg-gray-800 rounded-3xl p-3 shadow-2xl shadow-purple-900/20">
+                                <div class="bg-gray-900 rounded-2xl aspect-[9/18]">
+                                    <img src="./resources/afro/ss01.png" alt="Afro Beats"
+                                         class="rounded-2xl w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev swiper-button-prev-1 text-purple-400"></div>
+                <div class="swiper-button-next swiper-button-next-1 text-purple-400"></div>
+            </div>
+        </div>
+
+        <div></div>
+
+        <div class="container mx-auto py-16 md:py-24 px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold">Embed, Engage, & Convert</h2>
+                <p class="text-lg text-gray-400 mt-4 max-w-2xl mx-auto">
+                    Go beyond simple links. Integrate streaming, video, merch, and ticket sales directly into one immersive fan experience.
+                </p>
+                <p><span
+                        class="gradient-text">Showcase your latest tracks, music videos, tour dates, and merchandise all in one spot.</span>
+                </p>
+            </div>
+            <div class="mt-16 md:mt-24 max-w-4xl mx-auto relative">
+                <div class="swiper-container swiper-container-2 overflow-hidden">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="width: 300px;">
+                            <div class="bg-gray-800 rounded-3xl p-3 shadow-2xl shadow-purple-900/20">
+                                <img src="./resources/hip-hop/ss01.png" alt="Hip-hop"
+                                     class="rounded-2xl w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="width: 300px;">
+                            <div class="bg-gray-800 rounded-3xl p-3 shadow-2xl shadow-purple-900/20">
+                                <img src="./resources/hip-hop/ss02.png" alt="Hip-hop"
+                                     class="rounded-2xl w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="width: 300px;">
+                            <div class="bg-gray-800 rounded-3xl p-3 shadow-2xl shadow-purple-900/20">
+                                <img src="./resources/hip-hop/ss03.png" alt="Hip-hop"
+                                     class="rounded-2xl w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="width: 300px;">
+                            <div class="bg-gray-800 rounded-3xl p-3 shadow-2xl shadow-purple-900/20">
+                                <img src="./resources/hip-hop/ss04.png" alt="Hip-hop"
+                                     class="rounded-2xl w-full h-full object-cover">
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="width: 300px;">
+                            <div class="bg-gray-800 rounded-3xl p-3 shadow-2xl shadow-purple-900/20">
+                                <div class="bg-gray-900 rounded-2xl aspect-[9/18]">
+                                    <img src="./resources/metal/ss01.png" alt="Metal"
+                                         class="rounded-2xl w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="width: 300px;">
+                            <div class="bg-gray-800 rounded-3xl p-3 shadow-2xl shadow-purple-900/20">
+                                <div class="bg-gray-900 rounded-2xl aspect-[9/18]">
+                                    <img src="./resources/metal/ss02.png" alt="Metal"
+                                         class="rounded-2xl w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="width: 300px;">
+                            <div class="bg-gray-800 rounded-3xl p-3 shadow-2xl shadow-purple-900/20">
+                                <div class="bg-gray-900 rounded-2xl aspect-[9/18]">
+                                    <img src="./resources/metal/ss03.png" alt="Metal"
+                                         class="rounded-2xl w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="width: 300px;">
+                            <div class="bg-gray-800 rounded-3xl p-3 shadow-2xl shadow-purple-900/20">
+                                <div class="bg-gray-900 rounded-2xl aspect-[9/18]">
+                                    <img src="./resources/metal/ss04.png" alt="Metal"
+                                         class="rounded-2xl w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="width: 300px;">
+                            <div class="bg-gray-800 rounded-3xl p-3 shadow-2xl shadow-purple-900/20">
+                                <div class="bg-gray-900 rounded-2xl aspect-[9/18]">
+                                    <img src="./resources/afro/ss01.png" alt="Afro Beats"
+                                         class="rounded-2xl w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="width: 300px;">
+                            <div class="bg-gray-800 rounded-3xl p-3 shadow-2xl shadow-purple-900/20">
+                                <div class="bg-gray-900 rounded-2xl aspect-[9/18]">
+                                    <img src="./resources/afro/ss02.png" alt="Afro Beats"
+                                         class="rounded-2xl w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" style="width: 300px;">
+                            <div class="bg-gray-800 rounded-3xl p-3 shadow-2xl shadow-purple-900/20">
+                                <div class="bg-gray-900 rounded-2xl aspect-[9/18]">
+                                    <img src="./resources/afro/ss03.png" alt="Afro Beats"
+                                         class="rounded-2xl w-full h-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-prev swiper-button-prev-2 text-purple-400"></div>
+                <div class="swiper-button-next swiper-button-next-2 text-purple-400"></div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<section class="py-16 md:py-24 bg-gray-900">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold">From Generic List to Your Digital Stage</h2>
+            <p class="text-lg text-gray-400 mt-4 max-w-2xl mx-auto">A generic link list just sends people away. **StageApp** turns one link into a personalized, high-conversion fan experience.</p>
+        </div>
+        <div class="max-w-5xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+                <div>
+                    <h3 class="text-center text-xl font-bold mb-4 text-red-400">The Old Way</h3>
+                    <div class="max-w-sm mx-auto">
+                        <div class="bg-gray-800 rounded-3xl p-3 shadow-lg">
+                            <div class="bg-gray-700 rounded-2xl aspect-[9/18] p-8 flex flex-col items-center gap-4">
+                                <div class="w-24 h-24 bg-gray-500 rounded-full"></div>
+                                <p class="font-semibold text-white">@YourBand</p>
+                                <div class="w-full h-12 bg-gray-500 rounded-lg"></div>
+                                <div class="w-full h-12 bg-gray-500 rounded-lg"></div>
+                                <div class="w-full h-12 bg-gray-500 rounded-lg"></div>
+                                <div class="w-full h-12 bg-gray-500 rounded-lg"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-center text-xl font-bold mb-4 text-green-400">The StageApp Way</h3>
+                    <div class="max-w-sm mx-auto relative">
+                        <div class="bg-gray-800 rounded-3xl p-3 shadow-2xl shadow-purple-900/20">
+                            <div class="rounded-2xl aspect-[9/18] overflow-hidden">
+                                <div class="swiper-container swiper-container-3 h-full w-full">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="bg-gray-800 rounded-xl p-3 shadow-2xl shadow-purple-900/20 h-full">
+                                                <img src="./resources/hip-hop/ss01.png" alt="Hip-hop"
+                                                     class="w-full h-full object-cover">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="bg-gray-800 rounded-xl p-3 shadow-2xl shadow-purple-900/20 h-full">
+                                                <img src="./resources/hip-hop/ss02.png" alt="Hip-hop"
+                                                     class="w-full h-full object-cover">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="bg-gray-800 rounded-3xl p-3 shadow-2xl shadow-purple-900/20 h-full">
+                                                <img src="./resources/hip-hop/ss03.png" alt="Hip-hop"
+                                                     class="w-full h-full object-cover">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="bg-gray-800 rounded-3xl p-3 shadow-2xl shadow-purple-900/20 h-full">
+                                                <img src="./resources/hip-hop/ss04.png" alt="Hip-hop"
+                                                     class="w-full h-full object-cover">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="bg-gray-800 rounded-3xl p-3 shadow-2xl shadow-purple-900/20 h-full">
+                                                <img src="./resources/metal/ss01.png" alt="Metal"
+                                                     class="w-full h-full object-cover">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="bg-gray-800 rounded-3xl p-3 shadow-2xl shadow-purple-900/20 h-full">
+                                                <img src="./resources/metal/ss02.png" alt="Metal"
+                                                     class="w-full h-full object-cover">
+                                                </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="bg-gray-800 rounded-3xl p-3 shadow-2xl shadow-purple-900/20 h-full">
+                                                <img src="./resources/metal/ss03.png" alt="Metal"
+                                                     class="w-full h-full object-cover">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="bg-gray-800 rounded-3xl p-3 shadow-2xl shadow-purple-900/20 h-full">
+                                                <img src="./resources/metal/ss04.png" alt="Metal"
+                                                     class="w-full h-full object-cover">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="bg-gray-800 rounded-3xl p-3 shadow-2xl shadow-purple-900/20 h-full">
+                                                <img src="./resources/afro/ss01.png" alt="Afro Beats"
+                                                     class="w-full h-full object-cover">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="bg-gray-800 rounded-3xl p-3 shadow-2xl shadow-purple-900/20 h-full">
+                                                <img src="./resources/afro/ss02.png" alt="Afro Beats"
+                                                     class="w-full h-full object-cover">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="bg-gray-800 rounded-3xl p-3 shadow-2xl shadow-purple-900/20 h-full">
+                                                <img src="./resources/afro/ss03.png" alt="Afro Beats"
+                                                     class="w-full h-full object-cover">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute inset-y-0 left-0 flex items-center z-10">
+                            <div class="swiper-button-prev swiper-button-prev-3 text-purple-400 p-2 cursor-pointer bg-gray-900/50 rounded-r-lg"></div>
+                        </div>
+                        <div class="absolute inset-y-0 right-0 flex items-center z-10">
+                            <div class="swiper-button-next swiper-button-next-3 text-purple-400 p-2 cursor-pointer bg-gray-900/50 rounded-l-lg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-16 md:py-24">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold">Built for <span class="gradient-text">Musicians</span>, Not Influencers</h2>
+            <p class="text-lg text-gray-400 mt-4 max-w-2xl mx-auto">Integrations that matter for your music career.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <!-- Feature 1 -->
+            <div class="bg-gray-800 p-8 rounded-xl">
+                <div class="bg-purple-600/20 text-purple-400 w-12 h-12 rounded-lg flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 18V5l12-2v13"></path>
+                        <circle cx="6" cy="18" r="3"></circle>
+                        <circle cx="18" cy="16" r="3"></circle>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mt-6">Embed Your Latest Track</h3>
+                <p class="text-gray-400 mt-2">Drop in a Spotify or Apple Music link and we'll create a beautiful
+                    embedded player. Let fans listen without leaving the page.</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="bg-gray-800 p-8 rounded-xl">
+                <div class="bg-pink-600/20 text-pink-400 w-12 h-12 rounded-lg flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                        <line x1="16" y1="2" x2="16" y2="6"></line>
+                        <line x1="8" y1="2" x2="8" y2="6"></line>
+                        <line x1="3" y1="10" x2="21" y2="10"></line>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mt-6">Showcase Your Gigs</h3>
+                <p class="text-gray-400 mt-2">Connect your Bandsintown or Songkick profile to automatically display your
+                    upcoming shows. We'll even handle ticket links.</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="bg-gray-800 p-8 rounded-xl">
+                <div class="bg-teal-600/20 text-teal-400 w-12 h-12 rounded-lg flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                         stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                        <polyline points="2 17 12 22 22 17"></polyline>
+                        <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                </div>
+                <h3 class="text-xl font-bold mt-6">Match Your Brand</h3>
+                <p class="text-gray-400 mt-2">Choose from themes designed for artists. Customize colors, fonts, and
+                    layouts to create a page that feels like you, not like a generic template.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-16 md:py-24 bg-gray-800">
+    <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold">Ready to take the Stage?</h2>
+        <p class="text-lg text-gray-400 mt-4 max-w-2xl mx-auto">Sign up for early access and get a 50% lifetime discount
+            for supporting us.</p>
+        <div class="mt-10">
+            <!-- Form Action URL needs to be set up on Formspree -->
+            <form class="max-w-lg mx-auto" action="YOUR_FORMSPREE_URL_HERE" method="POST">
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <input type="email" name="_replyto" placeholder="Enter your email" required
+                           pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+                           class="w-full px-5 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:ring-2 focus:ring-purple-500 focus:outline-none transition">
+                    <button type="submit"
+                            class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 whitespace-nowrap">
+                        Get My Discount
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer class="py-8 bg-gray-900">
+    <div class="container mx-auto px-4 text-center text-gray-500">
+        <p>&copy; 2025 StageApp. The digital venue for artists.</p>
+    </div>
+</footer>
+
+<!-- Lightbox Modal Structure -->
+<div id="lightbox-modal" class="fixed inset-0 bg-gray-900/95 z-[9999] hidden items-center justify-center p-4" onclick="closeLightbox()">
+    <div class="relative max-w-6xl max-h-full">
+        <img id="lightbox-image" src="" alt="Enlarged image" class="max-h-[90vh] max-w-[90vw] object-contain cursor-pointer" onclick="event.stopPropagation()">
+    </div>
+</div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    // ------------------ LIGHTBOX FUNCTIONS ------------------
+    const lightboxModal = document.getElementById('lightbox-modal');
+    const lightboxImage = document.getElementById('lightbox-image');
+
+    function openLightbox(src) {
+        lightboxImage.src = src;
+        lightboxModal.classList.remove('hidden');
+        lightboxModal.classList.add('flex');
+    }
+
+    function closeLightbox() {
+        lightboxModal.classList.remove('flex');
+        lightboxModal.classList.add('hidden');
+        lightboxImage.src = '';
+    }
+
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape' && lightboxModal.classList.contains('flex')) {
+            closeLightbox();
+        }
+    });
+
+    // ------------------ FORM VALIDATION FUNCTIONS ------------------
+
+    function setupFormValidation(formSelector) {
+        const form = document.querySelector(formSelector);
+
+        if (!form) return;
+
+        const emailInput = form.querySelector('input[type="email"]');
+
+        form.addEventListener('submit', function(event) {
+            // Check HTML5 validity (required and pattern attributes)
+            if (!emailInput.checkValidity()) {
+                event.preventDefault();
+                // Add error styling
+                emailInput.classList.add('ring-2', 'ring-red-500', 'border-red-500');
+
+            } else {
+                // Remove error styling if valid
+                emailInput.classList.remove('ring-2', 'ring-red-500', 'border-red-500');
+            }
+        });
+
+        // Real-time feedback when the user types
+        emailInput.addEventListener('input', function() {
+            if (emailInput.checkValidity()) {
+                emailInput.classList.remove('ring-2', 'ring-red-500', 'border-red-500');
+            }
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        setupFormValidation('#early-access form');
+        setupFormValidation('.bg-gray-800 form');
+    });
+
+
+    // ------------------ SWIPER INITIALIZATION ------------------
+
+    const swiperConfigBase = {
+        effect: 'slide',
+        centeredSlides: true,
+        loop: true,
+        slidesPerView: 'auto',
+        spaceBetween: 20,
+
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 30
+            }
+        }
+    };
+
+    function initializeImageSwiper(selector, config) {
+        const swiper = new Swiper(selector, config);
+
+        // Add the click listener to handle image click for the lightbox
+        swiper.el.querySelectorAll('.swiper-slide img').forEach(img => {
+            img.style.cursor = 'zoom-in';
+            img.addEventListener('click', () => {
+                openLightbox(img.src);
+            });
+        });
+
+        return swiper;
+    }
+
+    // Swiper 1 (Starts on index 1, loop: false)
+    initializeImageSwiper('.swiper-container-1', {
+        ...swiperConfigBase,
+        loop: false,
+        initialSlide: 1,
+        navigation: {
+            nextEl: '.swiper-button-next-1',
+            prevEl: '.swiper-button-prev-1',
+        },
+    });
+
+    // Swiper 2
+    initializeImageSwiper('.swiper-container-2', {
+        ...swiperConfigBase,
+        navigation: {
+            nextEl: '.swiper-button-next-2',
+            prevEl: '.swiper-button-prev-2',
+        }
+    });
+
+    // Swiper 3 (Single slide view)
+    initializeImageSwiper('.swiper-container-3', {
+        effect: 'slide',
+        slidesPerView: 1,
+        spaceBetween: 0,
+        loop: true,
+        autoHeight: true,
+
+        navigation: {
+            nextEl: '.swiper-button-next-3',
+            prevEl: '.swiper-button-prev-3',
+        },
+    });
+</script>
+</body>
+</html>
